@@ -63,7 +63,7 @@ const WeddingCard = () => {
           </div>
 
           {/* Message */}
-          <p className="font-display text-lg md:text-xl text-foreground/90 italic leading-relaxed max-w-sm mx-auto animate-slide-up" style={{ animationDelay: "0.2s" }}>
+          <p className="font-display text-xl md:text-2xl text-foreground/90 italic leading-relaxed max-w-sm mx-auto animate-slide-up" style={{ animationDelay: "0.2s" }}>
             Depois de 16 anos e tantos momentos felizes, decidimos dizer o "Sim"
             oficial e queremos que faças parte desta festa.
           </p>
