@@ -76,7 +76,7 @@ const WeddingCard = () => {
             <div className="flex items-center justify-center gap-3">
               <MapPin className="w-7 h-7 flex-shrink-0 text-primary" />
               <span className="font-body text-lg md:text-xl font-medium text-foreground">
-                Quinta de São Gonçalo, Alenquer
+                Q.<sup className="underline">ta</sup> de S. Gonçalo, Alenquer
               </span>
             </div>
 
