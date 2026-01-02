@@ -7,11 +7,7 @@ const WeddingCard = () => {
   };
 
   const handleLocation = () => {
-    window.open(
-      "https://www.google.com/maps/place/Quinta+de+S%C3%A3o+Gon%C3%A7alo/@39.0511,-9.0147,15z",
-      "_blank",
-      "noopener,noreferrer"
-    );
+    window.open("https://share.google/w4PlXMvc2JZysKOB4", "_blank");
   };
 
   return (
@@ -73,18 +69,23 @@ const WeddingCard = () => {
             <div className="flex items-center justify-center gap-3">
               <Calendar className="w-5 h-5 text-primary" />
               <span className="font-body font-medium text-foreground">
-                Quinta de São Gonçalo, Alenquer
+                25 de Julho de 2026
               </span>
             </div>
 
             <div className="flex items-center justify-center gap-3">
               <MapPin className="w-5 h-5 text-primary" />
               <span className="font-body font-medium text-foreground">
-                A festa começa às 14h30
+                Quinta de São Gonçalo, Alenquer
               </span>
             </div>
 
-
+            <div className="flex items-center justify-center gap-3">
+              <Clock className="w-5 h-5 text-primary" />
+              <span className="font-body font-medium text-foreground">
+                A festa começa às 14h30
+              </span>
+            </div>
           </div>
 
           {/* Divider */}
