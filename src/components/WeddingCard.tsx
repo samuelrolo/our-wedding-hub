@@ -67,21 +67,21 @@ const WeddingCard = () => {
           {/* Details */}
           <div className="space-y-4 pt-4 animate-slide-up" style={{ animationDelay: "0.4s" }}>
             <div className="flex items-center justify-center gap-3">
-              <Calendar className="w-7 h-7 text-primary" />
+              <Calendar className="w-7 h-7 flex-shrink-0 text-primary" />
               <span className="font-body text-lg md:text-xl font-medium text-foreground">
                 25 de Julho de 2026
               </span>
             </div>
 
             <div className="flex items-center justify-center gap-3">
-              <MapPin className="w-7 h-7 text-primary" />
+              <MapPin className="w-7 h-7 flex-shrink-0 text-primary" />
               <span className="font-body text-lg md:text-xl font-medium text-foreground">
                 Quinta de São Gonçalo, Alenquer
               </span>
             </div>
 
             <div className="flex items-center justify-center gap-3">
-              <Clock className="w-7 h-7 text-primary" />
+              <Clock className="w-7 h-7 flex-shrink-0 text-primary" />
               <span className="font-body text-lg md:text-xl font-medium text-foreground">
                 A festa começa às 14h30
               </span>
