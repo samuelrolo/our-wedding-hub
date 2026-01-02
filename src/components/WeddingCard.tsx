@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Clock, Phone } from "lucide-react";
+import { Calendar, MapPin, Clock, Phone, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const WeddingCard = () => {
@@ -15,9 +15,9 @@ const WeddingCard = () => {
   };
 
   return (
-    <div className="relative w-full max-w-lg mx-auto">
+    <div className="relative w-full max-w-4xl mx-auto">
       {/* Main card */}
-      <div className="golden-frame bg-white/95 backdrop-blur-sm rounded-sm p-8 md:p-12 relative overflow-hidden animate-fade-in shadow-2xl">
+      <div className="golden-frame bg-white/95 backdrop-blur-sm rounded-sm p-12 md:p-20 relative overflow-hidden animate-fade-in shadow-2xl">
         {/* Content */}
         <div className="relative z-20 text-center space-y-6">
           {/* Title */}
@@ -111,6 +111,13 @@ const WeddingCard = () => {
               <MapPin className="w-4 h-4 mr-2" />
               Como Chegar
             </Button>
+          </div>
+
+          {/* Footer inside card */}
+          <div className="mt-8 pt-6 border-t border-primary/20 flex items-center justify-center gap-2 text-muted-foreground text-sm font-body animate-fade-in" style={{ animationDelay: "0.8s" }}>
+            <span>Feito com</span>
+            <Heart className="w-4 h-4 text-primary fill-primary animate-pulse" />
+            <span>para o nosso dia especial</span>
           </div>
         </div>
       </div>
