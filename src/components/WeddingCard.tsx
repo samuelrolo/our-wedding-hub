@@ -15,9 +15,9 @@ const WeddingCard = () => {
   };
 
   return (
-    <div className="relative w-full max-w-4xl mx-auto">
+    <div className="relative w-full max-w-5xl mx-auto">
       {/* Main card */}
-      <div className="golden-frame bg-white/95 backdrop-blur-sm rounded-sm p-12 md:p-20 relative overflow-hidden animate-fade-in shadow-2xl">
+      <div className="golden-frame bg-white/95 backdrop-blur-sm rounded-sm p-12 md:p-20 lg:p-24 relative overflow-hidden animate-fade-in shadow-2xl">
         {/* Content */}
         <div className="relative z-20 text-center space-y-6">
           {/* Title */}

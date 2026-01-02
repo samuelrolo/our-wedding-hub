@@ -66,7 +66,7 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
         </div>
 
         {/* Couple names */}
-        <p className="font-display text-xl md:text-2xl text-primary italic animate-fade-in" style={{ animationDelay: "0.3s" }}>
+        <p className="font-display text-4xl md:text-6xl text-primary italic animate-fade-in font-semibold" style={{ animationDelay: "0.3s" }}>
           Vamos Casar
         </p>
 
