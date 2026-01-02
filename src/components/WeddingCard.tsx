@@ -1,7 +1,5 @@
 import { Calendar, MapPin, Clock, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import eucalyptusImg from "@/assets/eucalyptus-left.png";
-import ringsImg from "@/assets/wedding-rings.png";
 
 const WeddingCard = () => {
   const handleCall = () => {
@@ -18,22 +16,8 @@ const WeddingCard = () => {
 
   return (
     <div className="relative w-full max-w-lg mx-auto">
-      {/* Top left eucalyptus */}
-      <img
-        src={eucalyptusImg}
-        alt="Decoração de eucalipto"
-        className="absolute -top-8 -left-8 w-40 h-auto opacity-90 eucalyptus-shadow pointer-events-none -rotate-12 z-10"
-      />
-
-      {/* Bottom right eucalyptus (flipped) */}
-      <img
-        src={eucalyptusImg}
-        alt="Decoração de eucalipto"
-        className="absolute -bottom-8 -right-8 w-40 h-auto opacity-90 eucalyptus-shadow pointer-events-none rotate-180 -z-10"
-      />
-
       {/* Main card */}
-      <div className="golden-frame bg-card rounded-sm p-8 md:p-12 relative overflow-hidden animate-fade-in">
+      <div className="golden-frame bg-white/95 backdrop-blur-sm rounded-sm p-8 md:p-12 relative overflow-hidden animate-fade-in shadow-2xl">
         {/* Content */}
         <div className="relative z-20 text-center space-y-6">
           {/* Title */}
@@ -41,13 +25,33 @@ const WeddingCard = () => {
             VAMOS CASAR!
           </h1>
 
-          {/* Rings */}
+          {/* Rings Icon */}
           <div className="flex justify-center animate-float">
-            <img
-              src={ringsImg}
-              alt="Alianças de casamento"
-              className="w-24 h-24 object-contain"
-            />
+            <svg
+              viewBox="0 0 100 60"
+              className="w-24 h-16 drop-shadow-md"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              {/* Left ring */}
+              <circle
+                cx="35"
+                cy="30"
+                r="16"
+                stroke="hsl(var(--primary))"
+                strokeWidth="3"
+                fill="none"
+              />
+              {/* Right ring */}
+              <circle
+                cx="65"
+                cy="30"
+                r="16"
+                stroke="hsl(var(--primary))"
+                strokeWidth="3"
+                fill="none"
+              />
+            </svg>
           </div>
 
           {/* Message */}
