@@ -15,7 +15,7 @@ const WeddingCard = () => {
       {/* Main card */}
       <div className="golden-frame bg-white/95 backdrop-blur-sm rounded-sm p-12 md:p-20 lg:p-24 relative overflow-hidden animate-fade-in shadow-2xl">
         {/* Content */}
-        <div className="relative z-20 text-center space-y-6">
+        <div className="relative z-20 text-center space-y-8">
           {/* Title */}
           <div className="space-y-2 animate-slide-up">
             <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground tracking-wide">
@@ -33,7 +33,7 @@ const WeddingCard = () => {
           <div className="flex justify-center animate-float">
             <svg
               viewBox="0 0 100 60"
-              className="w-24 h-16 drop-shadow-md"
+              className="w-32 h-20 md:w-40 md:h-24 drop-shadow-md"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -89,7 +89,7 @@ const WeddingCard = () => {
           </div>
 
           {/* Divider */}
-          <div className="w-24 h-0.5 golden-gradient mx-auto rounded-full animate-slide-up" style={{ animationDelay: "0.5s" }} />
+          <div className="w-32 h-1 bg-primary/30 mx-auto rounded-full animate-slide-up" style={{ animationDelay: "0.5s" }} />
 
           {/* RSVP Note */}
           <p className="font-body text-sm text-muted-foreground animate-slide-up" style={{ animationDelay: "0.6s" }}>
@@ -98,21 +98,20 @@ const WeddingCard = () => {
           </p>
 
           {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-2 animate-slide-up" style={{ animationDelay: "0.7s" }}>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               onClick={handleCall}
-              className="golden-gradient text-primary-foreground hover:opacity-90 transition-opacity font-body font-medium px-6 py-5 rounded-full shadow-lg"
+              className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-sm shadow-lg transition-all"
             >
-              <Phone className="w-4 h-4 mr-2" />
-              Ligar aos Noivos
+              <Phone className="w-5 h-5 mr-2" />
+              Confirmar Presença
             </Button>
-
             <Button
-              onClick={handleLocation}
               variant="outline"
-              className="border-primary text-primary hover:bg-primary/10 font-body font-medium px-6 py-5 rounded-full"
+              onClick={handleLocation}
+              className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-8 py-6 text-lg rounded-sm transition-all"
             >
-              <MapPin className="w-4 h-4 mr-2" />
+              <MapPin className="w-5 h-5 mr-2" />
               Como Chegar
             </Button>
           </div>
