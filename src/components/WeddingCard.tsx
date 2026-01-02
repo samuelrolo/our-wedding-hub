@@ -28,7 +28,7 @@ const WeddingCard = () => {
       <img
         src={eucalyptusImg}
         alt="Decoração de eucalipto"
-        className="absolute -bottom-8 -right-8 w-40 h-auto opacity-90 eucalyptus-shadow pointer-events-none rotate-180 z-10"
+        className="absolute -bottom-8 -right-8 w-40 h-auto opacity-90 eucalyptus-shadow pointer-events-none rotate-180 -z-10"
       />
 
       {/* Main card */}
