@@ -21,9 +21,12 @@ const WeddingCard = () => {
         {/* Content */}
         <div className="relative z-20 text-center space-y-6">
           {/* Title */}
-          <h1 className="font-display text-4xl md:text-5xl font-semibold text-foreground tracking-wide animate-slide-up">
-            VAMOS CASAR!
+          <h1 className="font-display text-3xl md:text-4xl font-semibold text-foreground tracking-wide animate-slide-up">
+            Casamento Vando e Anita
           </h1>
+          <p className="font-display text-xl md:text-2xl text-primary font-medium animate-slide-up" style={{ animationDelay: "0.1s" }}>
+            25-07-2026
+          </p>
 
           {/* Rings Icon */}
           <div className="flex justify-center animate-float">
@@ -38,7 +41,7 @@ const WeddingCard = () => {
                 cx="35"
                 cy="30"
                 r="16"
-                stroke="hsl(var(--primary))"
+                stroke="white"
                 strokeWidth="3"
                 fill="none"
               />
@@ -47,7 +50,7 @@ const WeddingCard = () => {
                 cx="65"
                 cy="30"
                 r="16"
-                stroke="hsl(var(--primary))"
+                stroke="white"
                 strokeWidth="3"
                 fill="none"
               />
@@ -65,23 +68,18 @@ const WeddingCard = () => {
             <div className="flex items-center justify-center gap-3">
               <Calendar className="w-5 h-5 text-primary" />
               <span className="font-body font-medium text-foreground">
-                25 de Julho de 2026
+                Quinta de São Gonçalo, Alenquer
               </span>
             </div>
 
             <div className="flex items-center justify-center gap-3">
               <MapPin className="w-5 h-5 text-primary" />
               <span className="font-body font-medium text-foreground">
-                Quinta de São Gonçalo, Alenquer
-              </span>
-            </div>
-
-            <div className="flex items-center justify-center gap-3">
-              <Clock className="w-5 h-5 text-primary" />
-              <span className="font-body font-medium text-foreground">
                 A festa começa às 14h30
               </span>
             </div>
+
+
           </div>
 
           {/* Divider */}
