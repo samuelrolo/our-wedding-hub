@@ -10,8 +10,9 @@ const WeddingCard = () => {
 
   const handleLocation = () => {
     window.open(
-      "https://www.google.com/maps/search/Quinta+de+S%C3%A3o+Gon%C3%A7alo+Alenquer",
-      "_blank"
+      "https://www.google.com/maps/place/Quinta+de+S%C3%A3o+Gon%C3%A7alo/@39.0511,-9.0147,15z",
+      "_blank",
+      "noopener,noreferrer"
     );
   };
 
