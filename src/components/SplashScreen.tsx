@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import eucalyptusImg from "@/assets/eucalyptus-left.png";
 
 interface SplashScreenProps {
   onComplete: () => void;
@@ -25,25 +24,12 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-background transition-all duration-500 ${
-        isExiting ? "opacity-0 scale-110" : "opacity-100 scale-100"
-      }`}
+      className={`fixed inset-0 z-50 flex flex-col items-center justify-center bg-background transition-all duration-500 ${isExiting ? "opacity-0 scale-110" : "opacity-100 scale-100"
+        }`}
     >
       {/* Golden frame border effect */}
       <div className="absolute inset-4 md:inset-12 border-2 border-primary/40 pointer-events-none" />
       <div className="absolute inset-6 md:inset-14 border border-primary/20 pointer-events-none" />
-
-      {/* Eucalyptus decorations */}
-      <img
-        src={eucalyptusImg}
-        alt=""
-        className="absolute top-0 left-0 w-32 md:w-48 h-auto opacity-80 -rotate-12 pointer-events-none"
-      />
-      <img
-        src={eucalyptusImg}
-        alt=""
-        className="absolute bottom-0 right-0 w-32 md:w-48 h-auto opacity-80 rotate-[170deg] pointer-events-none"
-      />
 
       {/* Content */}
       <div className="relative z-10 text-center">
@@ -83,7 +69,7 @@ const SplashScreen = ({ onComplete }: SplashScreenProps) => {
         <h1 className="font-display text-4xl md:text-5xl text-foreground font-semibold tracking-widest mb-3 animate-fade-in">
           Nós
         </h1>
-        
+
         <p className="font-display text-xl md:text-2xl text-primary italic animate-fade-in" style={{ animationDelay: "0.3s" }}>
           Vamos Casar
         </p>
