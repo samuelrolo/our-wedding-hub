@@ -21,10 +21,15 @@ const WeddingCard = () => {
         {/* Content */}
         <div className="relative z-20 text-center space-y-6">
           {/* Title */}
-          <h1 className="font-display text-3xl md:text-4xl font-semibold text-foreground tracking-wide animate-slide-up">
-            Casamento Vando e Anita
-          </h1>
-          <p className="font-display text-xl md:text-2xl text-primary font-medium animate-slide-up" style={{ animationDelay: "0.1s" }}>
+          <div className="space-y-2 animate-slide-up">
+            <h2 className="font-display text-2xl md:text-3xl font-medium text-foreground tracking-wide">
+              Casamento
+            </h2>
+            <h1 className="font-display text-4xl md:text-5xl font-bold text-primary italic tracking-wider">
+              Vando & Anita
+            </h1>
+          </div>
+          <p className="font-display text-xl md:text-2xl text-foreground font-medium animate-slide-up" style={{ animationDelay: "0.1s" }}>
             25-07-2026
           </p>
 
